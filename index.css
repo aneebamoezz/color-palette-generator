@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5em 0.9em;
+    height: 5.6rem;
+    box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.15);
+}
+
+input[type='color']{
+    width: 3.8rem;
+    height: 2.6rem;
+    border: 3px solid #d1d5db;
+}
+
+select,
+button{
+    background: inherit;
+    color: inherit;
+    padding: 0.8em 0.6em;
+    border-radius: 4px;
+    border: 1px solid #d1d5db;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+div{
+    height: calc(100vh - 5.6rem - 2.8rem);
+    cursor: pointer;
+}
+
+main,
+footer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+footer{
+    height: 2.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    margin: auto;
+    font-weight: 600;
+}
+
+@media (max-width: 410px){
+    header{
+        flex-direction: column;
+        height: 12rem;
+        justify-content: space-between;
+    }
+}
